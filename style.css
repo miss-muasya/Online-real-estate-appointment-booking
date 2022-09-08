@@ -10,9 +10,10 @@ body{
 
 }
 .logo{
-  width: fit-content;
+  /* width: fit-content; */
   height: fit-content;
   padding: auto;
+  width: 100%;
   
 }
 .container-fluid{
