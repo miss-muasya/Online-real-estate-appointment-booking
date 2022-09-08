@@ -1,13 +1,27 @@
 body{ 
-    background-image: url(/imgs/background\ 2.webp);
+    /* background-image: url(/imgs/background\ 3.jpg); */
+    background-color: crimson;
     font-size:larger;
-    font-weight: 900;
+    font-weight: 1200;
     font-family: cursive;
     font-style: oblique;
     color:yellow;
     
 
 }
+.logo{
+  width: fit-content;
+  height: fit-content;
+  padding: auto;
+  
+}
+.container-fluid{
+ justify-content: space-evenly;
+
+
+
+}
+
 
 .overlay{
   background-color: rgba(202, 157, 74, 0.219);
@@ -26,10 +40,11 @@ body{
 }
 
 .gateway{
-    color: whitesmoke;
+    color: rgb(85, 3, 3);
     text-align: center;
+
 }
-  .dropbtn {
+  /* .dropbtn {
     background-color: yellowgreen;
     color: white;
     padding: 2px;
@@ -44,9 +59,9 @@ body{
     display: inline-block;
     margin-bottom: 190px;
 
-  }
+  } */
   
-  .dropdown-content {
+  /* .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -62,8 +77,8 @@ body{
     text-decoration: none;
     display: block;
     
-    
-  }
+     */
+  /* } */
   
   .dropdown-content a:hover {background-color: #ddd;}
   

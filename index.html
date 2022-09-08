@@ -1,24 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link rel="stylesheet" href="style.css">
-    <title>GATEWAY ESTATES LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-
 <body>
-    <!--title-->
     <h1 class="gateway" >GATEWAY ESTATES LLC</h1>
 
     <!--logo-->
-    <img src="/imgs/gateway estates llc.jpg" width="50%" height="50%" style="padding-left: 25%" alt="company logo">
-
+    <div class="logo">
+    <img src="/imgs/gateway estates llc.jpg" alt="company logo">
+    </div>
     <!--about-->
     <div class="about overlay" >
-        <H2 style="color: white" >About</H2>
+        <H2 style="color: black;">About</H2>
         <p>Gateway estates llc is a real estate company dedicated to helping
             our clients get the best deals <br> in the market and also make their
             work easier by <br> advising them accordingly by closely monitoring
@@ -26,13 +25,13 @@
 
 
         <!--mission-->
-        <h2>Mission</h2>
-        <p>To be the leading real estate company</p>
+        <h2 style="color:black;">Mission</h2>
+        <p style="color:black ;">To be the leading real estate company</p>
     </div>
 
     <!--services we ofer-->
     <div class="our-services overlay" >
-        <h2>Our services</h2>
+        <h2 style="color:black;">Our services</h2>
         <ul>
             <li>Renting properties</li>
             <li>Leasing properties</li>
@@ -51,118 +50,112 @@
         </ol>
     </div>
 
-
-    <!--footer icons
-        <h2>Social media accounts</h2>-->
-
-    <!-- <h1>Booking form</h1>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <p>rooms</p>
-                p
-                <p>Budget</p>
-                
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card m-2" style="width: 18rem;">
+                <img src="/imgs/mansion 4.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">kilimani</h5>
+                    <p class="card-text">3.4 million townhouse in kilimani.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book
+                        here</a>
+                </div>
             </div>
-          </div> -->
-    <div class="dropdown">
-        <button class="dropbtn">Number of rooms</button>
-        <div class="dropdown-content", id="number-ofrooms">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
+            <div class="card m-2" style="width: 18rem;">
+                <img src="/imgs/mansion 2"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Karen</h5>
+                    <p class="card-text">2.4 milion mansionnate in Karen</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book
+                        here</a>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 18rem;">
+                <img src="/imgs/mansion 1"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">lavington</h5>
+                    <p class="card-text">5.6 million bungallow in lavington.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book here
+                        </a>
+                </div>
+            </div>
+
+            <div>
+            <div class="card m-2" style="width: 18rem;">
+                    <img src="/imgs/mansion5.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Runda</h5>
+                        <p class="card-text">10.4 million bungallow in the leafy suburbs of Runda.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book here
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Booking Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="exampleDataList" class="form-label">Submit details here</label>
+                        <!-- <input class="form-control" list="datalistOptions" id="exampleDataList" -->
+                            <!-- placeholder="Name"> -->
+                            <div class="container">
+                                <div class="center">
+                                    <h3>Contacts</h3>
+                                    <br>
+                                    <form action="../Login-signup/login.html">
+                                        <div class="text_field">
+                                            <input type="text" required placeholder="Enter Name">
+                                        </div>
+                                        <br>
+                                        <div class="text_field">
+                                            <input type="number" required placeholder="Enter phone number">
+                                        </div>
+                                        <br>
+                                        <div class="text_field">
+                                            <input type="email" name="email" required placeholder="Enter Email"/>
+                                            </div>
+                                            <br>
+                 <div> 
+                        <div class="modal-body">
+                     <label for="exampleDataList" class="form-label">Day of viewing</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                    placeholder="Enter...">
+                                            <!-- <input class="form-control" list="datalistOptions" id="exampleDataList" -->
+                                         <!-- placeholder="Name">  -->
+                                            <!-- <input type="day" name="day" required placeholder="Day of viewing"/> -->
+                 <datalist id="datalistOptions"> 
+                 <option value="Monday"> 
+                 <option value="Tuesday"> 
+                 <option value="Wednesday"> 
+                 <option value="Thursday"> 
+                 <option value="Friday"> 
+
+                </datalist>
+                 </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="bookAlert()">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Budget</button>
-        <div class="dropdown-content">
-            <a href="#">1.2m</a>
-            <a href="#">2.3m</a>
-            <a href="#">3.5m</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Area of intrest</button>
-        <div class="dropdown-content">
-            <a href="#">kilimani</a>
-            <a href="#">kileleshwa</a>
-            <a href="#">lavington</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Payment mode</button>
-        <div class="dropdown-content">
-            <a href="#">Mpesa</a>
-            <a href="#">Cash</a>
-            <a href="#">Mortgage</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Day of viewing</button>
-        <div class="dropdown-content">
-            <a class="viewing" href="#">Monday</a>
-            <a class="viewing" href="#">Tuesday</a>
-            <a class="viewing" href="#">Wednesday</a>
-            <a class="viewing" href="#">Thursday</a>
-            <a class="viewing" href="#">Friday</a>
-        </div>
-    </div>
-
-    <div id="popup" class="dropdown">
-<p id="rooms"></p>
-<p id="budget"></p>
-<p id="area"></p>
-<p id="payment"></p>
-<p id="viewing"></p>
-    </div>
-    <!-- <div id="locations"></div> -->
-    <!-- <div id="form-div"></div> -->
-
-   <div id="imagesdiv"> 
-    <div class="imagediv">
-
-    </div>
-    <div class="imagediv">
-
-    </div>
-    <div class="imagediv">
-
-    </div>
-   </div>
-
-
-<div class="bookingform ">
-    <h2>Booking Forms</h2>
-<h3>Name</h3>
-<form id="formu">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-
-<h3>Contacts</h3>
-    <label for="number">phone number:</label><br>
-    <input type="text" id="number" name="number" value=""><br>
-
-<h3>Age</h3>
-    <label for="age">age:</label><br>
-    <input type="text" id="age" name="age" value=""><br>
-  
-<h3>Id number</h3>
-    <label for="id">id number:</label><br>
-    <input type="text" id="id" name="id" value=""><br>
-    <input type="submit" value="Submit">
-  </form> 
-
-</div>
-
-
-
-    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous">
+    </script>
+   <script src="/index.js"></script>
 </body>
-
 </html>
